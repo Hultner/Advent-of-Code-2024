@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "aoc24"
+version = "2024.0"
+description = ""
+readme = "readme.md"
+packages = [{include = "aoc"}]
+authors = ["Alexander Hultnér <ahultner@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+toolz = "^1.0.0"
+more-itertools = "^10.5.0"
+pydantic = "^2.10.2"
+multiprocess = "^0.70.17"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-xdist = "^3.6.1"
+pytest-cov = "^6.0.0"
+pytest-tldr = "^0.2.5"
+hypothesis = "^6.122.1"
+black = "^24.10.0"
+mypy = "^1.13.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+autoflake = "^2.3.1"
+jupyterlab = "^4.3.1"
+devtools = "^0.12.2"
+bpython = "^0.24"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 88
+
+[tool.coverage.run]
+omit = [
+    "aoc/__main__.py",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
