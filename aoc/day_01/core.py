@@ -59,7 +59,8 @@ def parse_input(raw_input: str) -> Tuple[Tuple[int], Tuple[int]]:
     # Create numbers
     numbers = ((int(d1), int(d2)) for (d1, d2) in data)
     # Unpack and split into two location lists
-    return zip(*numbers)
+    l1, l2 = zip(*numbers)
+    return l1, l2
 
 
 def calc_distances(l1: Tuple[int], l2: Tuple[int]) -> int:
