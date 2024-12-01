@@ -10,17 +10,15 @@ sample_seed_1 = """3   4
 3   3"""
 
 answers = (
-    2086478,
-    0,
+    11,
+    31,
 )
 
 
 def test_parts() -> None:
     # Oracle says so
-    assert part_1(sample_seed_1) == 11
-    assert part_1() == answers[0]
-    assert part_2(sample_seed_1) == 31
-    assert part_2() == 0
+    assert part_1() == 2086478
+    assert part_2() == 24941624
 
 
 def verify_day(data: Any, expected_1: Any, expected_2: Any) -> None:
