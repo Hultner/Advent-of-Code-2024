@@ -1,6 +1,7 @@
 """
 Advent of Code - Day XX
 """
+
 from typing import Tuple
 
 from aoc.day_XX.seed import p1

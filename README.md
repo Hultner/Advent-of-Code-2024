@@ -1,2 +1,2 @@
-# Advent-of-Code-2023
-Advent of Code 2023, for fun nothing serious
+# Advent-of-Code-2024
+Advent of Code 2024, for fun nothing serious

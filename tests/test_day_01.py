@@ -2,17 +2,24 @@ from typing import Any
 
 from aoc.day_01.core import part_1, part_2
 
-sample_seed_1 = (1,)
+sample_seed_1 = """3   4
+4   3
+2   5
+1   3
+3   9
+3   3"""
 
 answers = (
-    0,
+    2086478,
     0,
 )
 
 
 def test_parts() -> None:
     # Oracle says so
-    assert part_1() == 0
+    assert part_1(sample_seed_1) == 11
+    assert part_1() == answers[0]
+    assert part_2(sample_seed_1) == 31
     assert part_2() == 0
 
 
