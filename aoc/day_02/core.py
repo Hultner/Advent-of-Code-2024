@@ -76,13 +76,13 @@ Update your analysis by handling situations where the Problem Dampener can
 remove a single level from unsafe reports. How many reports are now safe?
 """
 
-from typing import Tuple
+from typing import Iterable
 from itertools import pairwise
 
 from aoc.day_02.seed import p1
 from aoc.common import util
 
-Report = tuple[int, int, int, int, int]
+Report = Iterable[int]
 
 
 def is_decreasing(report: Report) -> bool:
@@ -108,6 +108,7 @@ def is_safe_p2(report: Report) -> bool:
         t_report.pop(idx)
         if is_safe(t_report):
             return True
+    return False
 
 
 def part_1(puzzle_input: str = p1) -> int:
